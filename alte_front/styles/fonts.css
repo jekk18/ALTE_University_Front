@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std Book';
+    src: url('../assets/font/ITCAvantGardeStd-Bk.eot');
+    src: url('../assets/font/ITCAvantGardeStd-Bk.eot?#iefix') format('embedded-opentype'),
+        url('../assets/font/ITCAvantGardeStd-Bk.woff2') format('woff2'),
+        url('../assets/font/ITCAvantGardeStd-Bk.woff') format('woff'),
+        url('../assets/font/ITCAvantGardeStd-Bk.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std';
+    src: url('../assets/font/ITCAvantGardeStd-Bold.eot');
+    src: url('../assets/font/ITCAvantGardeStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/font/ITCAvantGardeStd-Bold.woff2') format('woff2'),
+        url('../assets/font/ITCAvantGardeStd-Bold.woff') format('woff'),
+        url('../assets/font/ITCAvantGardeStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std';
+    src: url('../assets/font/ITCAvantGardeStd-Md.eot');
+    src: url('../assets/font/ITCAvantGardeStd-Md.eot?#iefix') format('embedded-opentype'),
+        url('../assets/font/ITCAvantGardeStd-Md.woff2') format('woff2'),
+        url('../assets/font/ITCAvantGardeStd-Md.woff') format('woff'),
+        url('../assets/font/ITCAvantGardeStd-Md.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Std Bk';
+    src: url('../assets/font/ITCAvantGardeStd-Demi.eot');
+    src: url('../assets/font/ITCAvantGardeStd-Demi.eot?#iefix') format('embedded-opentype'),
+        url('../assets/font/ITCAvantGardeStd-Demi.woff2') format('woff2'),
+        url('../assets/font/ITCAvantGardeStd-Demi.woff') format('woff'),
+        url('../assets/font/ITCAvantGardeStd-Demi.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+ 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/font/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../assets/font/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/font/Montserrat-Bold.woff2') format('woff2'),
+        url('../assets/font/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* TBC */
+
+@font-face {
+    font-family: 'TBC Contractica CAPS';
+    src: url('../assets/font/TBCContracticaCAPS-Regular.woff2') format('woff2'),
+        url('../assets/font/TBCContracticaCAPS-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TBC Contractica';
+    src: url('../assets/font/TBCContractica-Bold.woff2') format('woff2'),
+        url('../assets/font/TBCContractica-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TBC Contractica CAPS';
+    src: url('../assets/font/TBCContracticaCAPS-Black.woff2') format('woff2'),
+        url('../assets/font/TBCContracticaCAPS-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TBC Contractica';
+    src: url('../assets/font/TBCContractica-Light.woff2') format('woff2'),
+        url('../assets/font/TBCContractica-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TBC Contractica CAPS';
+    src: url('../assets/font/TBCContracticaCAPS-Light.woff2') format('woff2'),
+        url('../assets/font/TBCContracticaCAPS-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TBC Contractica';
+    src: url('../assets/font/TBCContractica-Regular.woff2') format('woff2'),
+        url('../assets/font/TBCContractica-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TBC Contractica CAPS';
+    src: url('../assets/font/TBCContracticaCAPS-Medium.woff2') format('woff2'),
+        url('../assets/font/TBCContracticaCAPS-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TBC Contractica Book';
+    src: url('../assets/font/TBCContractica-Book.woff2') format('woff2'),
+        url('../assets/font/TBCContractica-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TBC Contractica';
+    src: url('../assets/font/TBCContractica-Medium.woff2') format('woff2'),
+        url('../assets/font/TBCContractica-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TBC Contractica CAPS';
+    src: url('../assets/font/TBCContracticaCAPS-Bold.woff2') format('woff2'),
+        url('../assets/font/TBCContracticaCAPS-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TBC Contractica CAPS Book';
+    src: url('../assets/font/TBCContracticaCAPS-Book.woff2') format('woff2'),
+        url('../assets/font/TBCContracticaCAPS-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TBC Contractica';
+    src: url('../assets/font/TBCContractica-Black.woff2') format('woff2'),
+        url('../assets/font/TBCContractica-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

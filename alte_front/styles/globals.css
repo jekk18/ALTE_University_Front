@@ -1,0 +1,4146 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HomePage */
+/* Main Slider */
+
+.m-bottom-01 {
+  margin-bottom: 50px;
+}
+.section-padding {
+  padding: 50px 0;
+}
+.section-padding-1 {
+  padding-bottom: 50px;
+}
+.main-slider-container {
+  width: 100%; 
+} 
+.main-slider-item {
+  width: 100%;
+  height: 752px;
+  position: relative;
+}
+.main-slider-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-slider-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.4);
+}
+.main-slider-text {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 740px;
+  height: 130px;
+  padding: 0 18px;
+  padding-top: 30px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-left: 8px solid #fff;
+  border-top: 8px solid #fff;
+  border-right: 8px solid #fff;
+}
+.main-slider-text h1 {
+  font-size: 34px;
+  line-height: 52px;
+  color: #fff;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  max-height: 205px;
+  overflow: hidden;
+  text-align: center;
+}
+.main-relative-cont {
+  position: relative;
+  height: 752px;
+}
+.slider-left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #fff;
+  width: 77px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 4;
+  cursor: pointer;
+}
+.slider-right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: #fff;
+  width: 77px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: 4;
+  cursor: pointer;
+}
+.slider-right-arrow span,
+.slider-left-arrow span {
+  transition: 0.3s;
+}
+.slider-right-arrow:hover span {
+  transform: scale(1.2);
+}
+.slider-left-arrow:hover span {
+  transform: scale(1.2);
+}
+/* .swiper-button-disabled{
+  opacity: 0.4!important;
+ } */
+/* Main Slider */
+/* Header */
+.burger-icon {
+  display: none;
+}
+.header-container {
+  height: 286px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background: linear-gradient(180deg, #000000 -50.5%, rgba(0, 0, 0, 0) 100%);
+}
+._header .header-container {
+  position: initial;
+  background: initial;
+  height: auto;
+}
+._header .header-container .header-01 {
+  position: initial;
+  position: relative;
+  z-index: 9;
+}
+.header-01 {
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  background: transparent;
+}
+.header-internal-active .header-01,
+._header .header-01 {
+  background: #fff;
+  box-shadow: 0px -2px 25px -18px #111;
+  z-index: 99999;
+}
+._header .sub-children-box{
+  background: #fff;
+  box-shadow: 0 4px 2px -2px rgba(217, 217, 217, 0.2);
+}
+._header .sub-children-box .sub-a{
+  color: #074045;
+}
+._header .sub-li{
+  border-left: 2px solid #074045;
+}
+._header .sub-grandchild-list a{
+  color: #074045;
+}
+._header .sub-grandchild-list a:hover{
+  color: #F26659;
+  text-shadow: 1px 0 0 #F26659;
+}
+._header .sub-children-box .sub-a:hover{
+  color: #F26659;
+  font-family: 'ITC Avant Garde Gothic Std';  
+  font-weight: bold;
+}
+.flex-container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.top-header {
+  height: 65px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.header-internal-active .top-header {
+  height: 0;
+  overflow: hidden;
+}
+.header-internal-active .top-header,
+._header .top-header {
+  border-bottom: 1px solid rgba(218, 226, 227, 1);
+}
+.left-top-header {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.top-link_01 {
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  line-height: 20px;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+  transition: 0.1s;
+}
+._header .top-link_01:hover {
+  text-shadow: 0 0 0.8px #074045;
+}
+.home_header .top-link_01:hover {
+  text-shadow: 0 0 0.8px #fff;
+}
+.header-internal-active .line_10,
+.header-internal-active .top-link_01,
+._header .top-link_01,
+._header .line_10 {
+  color: #074045;
+}
+
+.line_10 {
+  width: 3px;
+  background: rgba(80, 80, 85, 0.7);
+  height: 20px;
+}
+.right-top-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.subscribe-search-box {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.subscribe-search-box .subscribe {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.subscribe h3,
+.search a h3 {
+  color: #fff;
+  font-size: 16px;
+  font-family: "ITC Avant Garde Gothic Std Book";
+}
+.header-internal-active .subscribe h3,
+.header-internal-active .search a h3,
+._header .search a h3,
+._header .subscribe h3 {
+  color: #074045;
+}
+._header .subscribe-search-box .subscribe:hover h3,
+._header .subscribe-search-box .search:hover a h3 {
+  text-shadow: 0 0 0.8px #074045;
+}
+.home_header .subscribe-search-box .subscribe:hover h3,
+.home_header .subscribe-search-box .search:hover a h3 {
+  text-shadow: 0 0 0.8px #fff;
+}
+
+.search a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-soc-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 25px;
+}
+.header-soc-icons a span svg {
+  transition: 0.2s;
+}
+.header-soc-icons a span svg path {
+  transition: 0.3s;
+}
+.header-internal-active .header-soc-icons a span svg path,
+._header .header-soc-icons a span svg path {
+  fill: #074045;
+}
+.header-soc-icons a span:hover svg {
+  transform: scale(1.1);
+}
+ 
+.lang {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 10px;
+}
+.lang-link {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "ITC Avant Garde Gothic Std Book";
+  color: #fff;
+  transition: 0.3s;
+}
+.header-internal-active .lang,
+.header-internal-active .lang-link,
+._header .lang,
+._header .lang-link {
+  color: #074045;
+}
+.lang-active,
+.lang-link:hover {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+}
+.bottom-header {
+  position: relative;
+}
+.lang-link:last-child span {
+  display: none;
+}
+.lang-link span {
+  margin: 0 6px;
+}
+.home_header .header-container .bottom-header-hovered{
+  background: #074045;
+}
+.bottom-header-flex {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+.bottom-header-left {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.show-mobile-lang{
+  display: none;
+}
+.burger-lang-show-box{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo {
+  width: 140px;
+  height: 60px;
+  transition: 0.3s;
+}
+.logo a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.logo a img {
+  width: 100%;
+  height: 100%;
+}
+.nav-ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+}
+.nav-ul:hover .nav-li {
+  opacity: 0.7;
+}
+.nav-li {
+  list-style: none;
+  width: fit-content;
+  height: 50px; 
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.nav-link {
+  transition: 0.3s;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.nav-li:hover {
+  opacity: 1 !important;
+}
+.home_header .nav-li:hover .nav-link {
+  text-shadow: 0 0 1px #fff;
+  color: #fff;
+}
+._header .nav-li:hover .nav-link {
+  text-shadow: 0 0 1px #074045;
+  color: #074045;
+}
+.active-link {
+  color: #f26659 !important;
+  text-shadow: 0 0 0.9px #f26659;
+}
+.header-internal-active .nav-link,
+._header .nav-link {
+  color: #074045;
+}
+.header-internal-active .nav-li:hover .nav-link,
+._header .nav-li:hover .nav-link {
+  text-shadow: 0 0 0.9px #f26659;
+  color: #f26659;
+}
+.my-alte-buttons {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.bottom-header-alte-btn {
+  padding: 14px 30px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "ITC Avant Garde Std Bk";
+  transition: 0.3s;
+  text-align: center;
+}
+.informed-button {
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+}
+.my-alte-btn {
+  color: #144147;
+  background: #fff;
+  text-align: center;
+}
+.header-internal-active .informed-button,
+._header .informed-button {
+  color: #074045;
+  border: 2px solid rgba(218, 226, 227, 1);
+  text-align: center;
+}
+.informed-button:hover {
+  color: #074045;
+  border: 2px solid rgba(218, 226, 227, 1);
+  background-color: #fff;
+}
+.header-internal-active .my-alte-btn,
+._header .my-alte-btn {
+  color: #fff;
+  background: #f26659;
+  text-align: center;
+}
+.my-alte-btn:hover {
+  color: #fff;
+  background: #f26659;
+}
+/* Sub-menu */
+.sub-children-container {
+  position: absolute;
+  left: 0;
+  top: 90px;
+  width: 100%;
+  background: transparent;
+  padding: 25px 0;
+  transition: 0.5s;
+  display: none;
+}
+.sub-children-box {
+  width: 100%;
+  background: #074045;
+  padding: 40px 0;
+  /* position: relative; */
+}
+/* .sub-children-box::after{
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  content: " ";
+  background-color: #074045;
+  right: 100%;
+  top: 0;
+}
+.sub-children-box::before{
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  content: " ";
+  background-color: #074045;
+  left: 100%;
+  top: 0;
+} */
+
+.sub-child-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub-list-ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 50px;
+  gap: 30px 0;
+}
+.sub-li {
+  width: calc(100% / 4);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  list-style: none;
+  padding: 0 50px;
+  border-left: 2px solid #ffffff;
+}
+.sub-a {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  color: #fff;
+  transition: 0.2s;
+}
+.sub-a:hover {
+  font-family: 'ITC Avant Garde Gothic Std';  
+  font-weight: bold;
+}
+.sub-grandchild-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 18px;
+}
+.sub-grandchild-list a {
+  font-family: "ITC Avant Garde Gothic Std Book";
+  font-weight: 300;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  transition: 0.2s;
+}
+.sub-grandchild-list a:hover{
+  text-shadow: 1px 0 0 currentColor;
+}
+.nav-li:hover .sub-children-container {
+  display: block;
+}
+
+ 
+
+.burger-menu {
+  display: none;
+}
+/* Sub-menu */
+/* Header */
+/* Schools Sliders */
+.schools-slider-box {
+  width: 100%;
+}
+.school-sliders {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+.school-slider-1 {
+  width: 48.5%;
+}
+.school-sldier-1-item {
+  width: 100%;
+  height: 507px;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.link-route {
+  width: 100%;
+  height: 100%;
+}
+.link-route img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.school-sldier-item .link-route {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.school-sldier-item .link-route img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.slider-2-box {
+  width: 49%;
+  position: relative;
+}
+.school-slider-2 {
+  width: 100%;
+}
+.school-sldier-2-item {
+  width: 100%;
+  height: 596px;
+  padding: 30px 100px;
+  background: #f3f5f6;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.full-height {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.schools-ident {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.schools-ident h3 {
+  color: #1b1b1b;
+  font-size: 18px;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.line-03 {
+  width: 1px;
+  background-color: #1b1b1b;
+  height: 40px;
+}
+.school-title {
+  margin: 25px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+.school-title a {
+  width: 100%;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+  font-family: "ITC Avant Garde Gothic Std";
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  max-height: 135px;
+  overflow: hidden;
+}
+.school-text {
+  width: 100%;
+  max-height: 198px;
+  overflow: hidden;
+  font-size: 22px;
+  line-height: 34px;
+  color: #1b1b1b;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+  text-align: center;
+}
+.schoollink-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.school-slider-link {
+  padding: 12px 35px;
+  border-radius: 15px;
+  color: #fff;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  transition: 0.3s;
+}
+.school-slider-2 .slick-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: #fff;
+  width: 77px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: 4;
+  cursor: pointer;
+}
+.school-slider-2 .slick-next:hover {
+  background: #fff;
+}
+.school-slider-2 .slick-next::before {
+  opacity: 1 !important;
+  background-size: 16px 30px;
+  display: inline-block;
+  width: 16px;
+  height: 30px;
+  background-image: url("../assets/img/right-arrow.svg");
+  content: "";
+  transition: 0.1s;
+}
+.school-slider-2 .slick-next:hover::before {
+  background-size: 19px 36px;
+  width: 19px;
+  height: 36px;
+}
+.school-slider-2 .slick-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #fff;
+  width: 77px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 4;
+  cursor: pointer;
+}
+.school-slider-2 .slick-prev:hover {
+  background: #fff;
+}
+
+.school-slider-2 .slick-prev::before {
+  opacity: 1 !important;
+  background-size: 16px 30px;
+  display: inline-block;
+  width: 15px;
+  height: 30px;
+  background-image: url("../assets/img/left-arrow.svg");
+  content: "";
+}
+.school-slider-2 .slick-prev:hover::before {
+  background-size: 19px 36px;
+  width: 19px;
+  height: 36px;
+  transition: 0.1s;
+}
+/* Schools Sliders */
+/* Counter Up */
+.counter-up-title {
+  padding: 40px 100px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #0e3d4b;
+  width: fit-content;
+}
+.counter-up-title h2 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+  font-family: "ITC Avant Garde Std Bk";
+} 
+.counter-up-box {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: stretch;
+  gap: 40px;
+  padding-bottom: 26px;
+  justify-content: space-between;
+}
+.counter-item {
+  display: flex;
+  align-items: center;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.counter-item .counter-up-number {
+  position: relative;
+  font-size: 70px;
+  color: #eb5e51;
+  margin-right: 20px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-align: center;
+}
+.counter-item .counter-up-text {
+  font-size: 20px;
+  color: #000;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+.counter-item .counter-up-number::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 28px;
+  bottom: -25px;
+  left: 50%;
+  background: #eb5e51;
+}
+.counter-item:nth-child(2n-1) {
+  margin-top: 60px;
+}
+.counter-item:nth-child(2n) .counter-up-number {
+  color: #144147;
+}
+.counter-item:nth-child(2n) .counter-up-number::before {
+  background: #144147;
+}
+/* Counter Up */
+/* Banners */
+.banners-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 34px;
+}
+.banners-item {
+  width: calc((100% / 3) - 23px);
+  height: 192px;
+  border-radius: 17px;
+  background: #f3f5f6;
+  transition: 0.3s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 70px;
+}
+.banner-icon {
+  width: 85px;
+  height: 76px;
+  border-radius: 10px;
+  background: #fff;
+  position: absolute;
+  top: -38px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.banner-icon span {
+  transition: 0.2s;
+}
+
+.banner-text {
+  height: 50px;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-left: 5px solid #144147;
+  border-right: 5px solid #144147;
+  border-top: 5px solid #144147;
+  padding: 20px;
+  padding-bottom: 0;
+  transition: 0.2s;
+}
+.banner-text h2 {
+  color: #144147;
+  font-size: 24px;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.banners-item:hover {
+  background-color: #144147;
+}
+.banners-item:hover .banner-text {
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+  border-top: 5px solid #fff;
+}
+.banners-item:hover .banner-text h2 {
+  color: #fff;
+}
+/* BAnners */
+/* Events */
+.events-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.see-link-resp {
+  display: none;
+}
+.events-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.events-top h1 {
+  color: #074045;
+  width: fit-content;
+  font-size: 50px;
+  line-height: 45px;
+  font-family: "ITC Avant Garde Std Bk";
+  padding-right: 10px;
+}
+.events-top a {
+  color: #1b1b1b;
+  font-size: 20px;
+  transition: 0.3s;
+  font-family: "ITC Avant Garde Gothic Std";
+  text-transform: capitalize;
+}
+.events-top a:hover {
+  text-shadow: 0 0 0.8px #1b1b1b;
+}
+.events-content {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 33px;
+}
+.events-item {
+  width: calc((100% / 4) - 25px);
+}
+.events-img-box {
+  height: 225px;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+}
+.events-img-box img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  object-fit: inherit;
+}
+.events-item:hover .events-img-box img {
+  transform: scale(1.1);
+}
+.event-time {
+  display: flex;
+  align-items: center;
+  padding: 8px 25px;
+  padding-top: 13px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #fff;
+  transition: 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 78%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.event-time span {
+  color: #1b1b1b;
+  font-size: 20px;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+  transition: 0.3s;
+}
+.events-item:hover .event-time {
+  width: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #074045;
+}
+.events-item:hover .event-time span {
+  color: #fff;
+}
+.events-item:hover .event-time span.line-04 {
+  background-color: #fff;
+}
+.event-time span.line-04 {
+  width: 2px;
+  margin: 0 8px;
+  height: 22px;
+  background: #1b1b1b;
+  transition: 0.3s;
+}
+.event-year{
+  margin-left: 3px;
+}
+.event-time span.event-month {
+  margin-right: 5px;
+}
+.event-time span.hours,
+.event-time span.d_dots,
+.event-time span.minute {
+  color: #11ae8f;
+  font-size: 18px;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+  transition: 0.3s;
+}
+.event-text-box {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.event-title h2 {
+  font-size: 22px;
+  color: #1b1b1b;
+  line-height: 32px;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin-bottom: 8px;
+  height: 96px;
+}
+.event-text {
+  font-size: 20px;
+  line-height: 30px;
+  color: #1b1b1b;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  height: 120px;
+}
+.event-text p {
+  margin: 0;
+}
+.event-explore-link {
+  display: none;
+}
+.first-event-item {
+  width: calc((100% / 2) - 17px);
+  height: 474px;
+  position: relative;
+}
+.first-event-item .events-img-box {
+  height: 100%;
+  width: 100%;
+  position: initial;
+}
+.first-event-item .event-time {
+  left: initial;
+  bottom: initial;
+  right: 35px;
+  top: 30px;
+  border-radius: 10px;
+  padding-bottom: 12px;
+  transform: translateX(0);
+  width: fit-content;
+  transition: 0.3s;
+}
+.first-event-item:hover .event-time {
+  width: fit-content;
+  background-color: #074045;
+  top: 0;
+  right: 0;
+}
+.first-event-item:hover .event-time span {
+  color: #fff;
+}
+.first-event-item .event-text-box {
+  margin-top: 0;
+  height: 287px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  padding: 0 30px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 20px;
+}
+.first-event-item .event-title h2 {
+  color: #fff;
+  font-weight: 500;
+  height: auto;
+}
+.first-event-item .event-text {
+  color: #fff;
+  height: auto;
+}
+.first-event-item .event-explore-link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 25px;
+  left: 30px;
+  text-transform: capitalize;
+}
+.first-event-item .event-explore-link span {
+  margin-left: 15px;
+  transition: 0.3s;
+}
+.first-event-item:hover .event-explore-link span {
+  transform: translateX(10px);
+}
+/* Events */
+
+/* News */
+.news-slider-container {
+  position: relative;
+}
+.news-arrows {
+  background-color: #f3f5f6;
+}
+.news-slider-swiper {
+  margin-top: 40px;
+}
+.news-img {
+  position: relative;
+  width: 100%;
+  height: 307px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.news-img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s; 
+  object-fit: inherit;
+}
+.news-slider-item:hover .news-img img {
+  transform: scale(1.1);
+}
+
+.news-time {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 90px;
+  background: #fff;
+  gap: 5px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+.news-slider-item:hover .news-time {
+  width: 100%;
+  background-color: #074045;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.news-slider-item:hover .news-time span {
+  color: #fff;
+}
+.news-slider-text {
+  margin-top: 25px;
+}
+.news-title h2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  color: #1b1b1b;
+  font-size: 22px;
+  line-height: 32px;
+  font-family: "ITC Avant Garde Std Bk";
+  margin-bottom: 12px;
+  height: 62px;
+  overflow: hidden;
+}
+.news-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  color: #1b1b1b;
+  font-size: 20px;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+  line-height: 30px;
+  height: 120px;
+  overflow: hidden;
+}
+.news-text p {
+  margin: 0;
+}
+/* News */
+/* Footer */
+.footer {
+  width: 100%;
+  height: 100%;
+  background: #144147;
+  margin-top: 50px;
+}
+.footer-box {
+  display: flex;
+  border-top: 1px solid #0d5c66;
+}
+.footer-img h2 {
+  line-height: 30px;
+  font-size: 20px;
+  font-family: "ITC Avant Garde Std Bk";
+  color: #fff;
+  margin-top: 35px;
+  max-width: 210px;
+  margin-bottom: 25px;
+}
+.footer-img a img {
+  width: 166px;
+  height: 72px;
+}
+.copyright-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 32px;
+  border-top: 1px solid #0d5c66;
+}
+.copyright-box span, .copyright-box a {
+  text-transform: capitalize;
+  color: #38818a;
+  font-size: 16px;
+  font-family: "ITC Avant Garde Gothic Std Book";
+}
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.footer-contact h2 {
+  font-size: 20px;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.footer-contact span,
+.footer-contact a {
+  font-size: 18px;
+  color: #fff;
+  line-height: 27px;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+}
+.footer-contact a:hover {
+  color: #c9eef3;
+}
+.footer-links {
+  padding-top: 20px;
+}
+.footer-links a {
+  font-size: 18px;
+  color: #fff;
+  line-height: 27px;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+  transition: 0.1s;
+  padding-right: 50px;
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+.footer-links a:hover {
+  font-weight: 700;
+}
+/* Footer */
+/* subscribe-footer */
+.subscribe-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+.subscribe-box::before {
+  position: absolute;
+  content: url("../assets/img/subscribe-alte.svg");
+  width: 102px;
+  height: 83px;
+  top: 10%;
+  left: -8%;
+  transform: translateY(-10%) scale(1);
+}
+.subscribe-text-cont h2 {
+  font-size: 30px;
+  font-family: "ITC Avant Garde Std Bk";
+  color: #fff;
+  margin-bottom: 15px;
+}
+.subscribe-text-cont .text {
+  color: #fff;
+  font-size: 22px;
+  line-height: 32px;
+  font-family: "ITC Avant Garde Gothic Std Book";
+  font-weight: 300;
+  padding-right: 40px;
+}
+.subscribe-send-box {
+  padding-left: 40px;
+}
+.subscribe-items ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.subscribe-items ul li {
+  padding: 20px 45px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Montserrat";
+  list-style: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.subscribe-items ul li:hover,
+.subscribe-items ul li.actiev-sub-item {
+  background-color: #c9eef3;
+  color: #144147;
+  border: 2px solid #c9eef3;
+}
+.subscribe-input {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.subscribe-input form {
+  width: 749px;
+  height: 60px;
+  position: relative;
+}
+.subscribe-input form input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  border-radius: 15px;
+  background: #2c5b62;
+  padding-left: 30px;
+  color: #fff;
+  font-size: 20px;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+  appearance: none;
+  outline: none;
+}
+.subscribe-input form input::placeholder {
+  color: #fff;
+  font-size: 20px;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+}
+.subscribe-input form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 2px solid #fff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 45px;
+  background-color: transparent;
+  border-radius: 15px;
+  transition: 0.3s;
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Montserrat";
+}
+.subscribe-input form button:hover {
+  background: #c9eef3;
+  color: #144147;
+}
+.subscribe-input .sub_icon_01 {
+  width: 162px;
+  height: 75px;
+  margin-left: 40px;
+  transform: rotate(-3deg) translateY(-8px);
+}
+.subscribe-padding {
+  padding-top: 100px;
+}
+.cursor-none {
+  pointer-events: none;
+}
+
+/* subscribe-footer */
+/* Video container */
+.video-container {
+  width: 100%;
+  height: 600px;
+  margin-top: 50px;
+  margin-bottom: -50px;
+  position: relative;
+}
+.video-container h2 {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  color: red;
+}
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+}
+/* Video container */
+
+/* Redirect - banner */
+.tabs-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.tabs-1 {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  gap: 34px;
+  padding-right: 30px;
+}
+.tabs-left-link {
+  width: fit-content;
+  cursor: pointer;
+  transition: 0.1s;
+  padding: 0 44px 0px 0;
+  height: 45px;
+  transition: 0.1s;
+  margin-bottom: 15px;
+}
+.tabs-left-link span,
+.tabs-left-link a {
+  font-size: 42px;
+  line-height: 60px;
+  font-family: "ITC Avant Garde Std Bk";
+  transition: 0.5s;
+}
+.tabs-left-link:first-child span,
+.tabs-left-link:first-child a{
+  color: #000;
+} 
+.tabs-left-link:nth-child(2) span,
+.tabs-left-link:nth-child(2) a{
+  color: #000;
+} 
+.tabs-left-link:nth-child(3) span,
+.tabs-left-link:nth-child(3) a{
+  color: #000;
+} 
+.tabs-left-link:nth-child(4) span,
+.tabs-left-link:nth-child(4) a{
+  color: #000;
+}
+.tabs-left-link:nth-child(5) span,
+.tabs-left-link:nth-child(5) a{
+  color: #000;
+} 
+.tabs-left-link:nth-child(6) span,
+.tabs-left-link:nth-child(6) a{
+  color: #000;
+} 
+.tabs-left-link:nth-child(7) span,
+.tabs-left-link:nth-child(7) a{
+  color: #000;
+}    
+.active-tabs-link {
+  padding: 8px 16px 0px 16px;
+  border-top: 6px solid #000;
+  border-left: 6px solid #000;
+  border-right: 6px solid #000;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  height: 45px;
+  transition: 0.3s;
+  margin-bottom: 15px;
+}
+.tabs-box-responsive {
+  display: none;
+}
+.tabs-img-conainer-01 {
+  width: 43%;
+}
+.tabs-img-relative-box {
+  position: relative;
+  width: fit-content;
+  transition: 0.3s;
+}
+.tabs-img-relative-box::before {
+  position: absolute;
+  content: " ";
+  left: -54px;
+  top: 0;
+  height: 364px;
+  width: 2px;
+  background-color: #e8eaeb;
+  z-index: -1;
+}
+.tabs-img-relative-box::after {
+  position: absolute;
+  content: " ";
+  left: -130px;
+  top: 115px;
+  height: 2px;
+  width: 684px;
+  background-color: #e8eaeb;
+  z-index: -1;
+}
+.tabs-default-img {
+  width: 327px;
+  height: 402px;
+  position: relative;
+  border-radius: 15px;
+  border: 2px solid #f5f5f5;
+  background-color: #fff;
+  overflow: hidden;
+}
+.tabs-default-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tabs-default-img::after {
+  display: none !important;
+}
+.tabs-default-img h2 {
+  position: absolute;
+  left: 15%;
+  top: 40%;
+  transform: translateY(-40%);
+  font-size: 32px;
+  line-height: 52px;
+  color: #144147;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  max-width: 50%;
+}
+.tabs-default-img-icon {
+  position: absolute;
+  left: 58px;
+  bottom: 0;
+}
+.abs-box-01 {
+  position: absolute;
+  right: -80px;
+  top: 50px;
+  height: 336px;
+}
+.rel-box-01 {
+  position: relative;
+  height: 100%;
+}
+.rel-box-01::before {
+  position: absolute;
+  content: "";
+  background-color: #e8eaeb;
+  width: 2px;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+.rel-box-01::after {
+  position: absolute;
+  content: "";
+  background-color: #e8eaeb;
+  width: 215px;
+  height: 2px;
+  right: -130px;
+  bottom: 130px;
+  z-index: -1;
+}
+.tabs-change-img {
+  transition: 0.3s;
+}
+.tabs-img {
+  width: 327px;
+  height: 402px;
+  transition: 0.3s;
+}
+.tabs-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* Redirect - banner */
+/* Pop Up */
+.pop-up-register {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.pop-up-register2{
+  display: none;
+}
+.openSubscribeForm{
+  display: flex;
+}
+.pop-up-box {
+  width: 900px;
+  padding: 53px 69px;
+  border-radius: 20px;
+  background: #fff;
+}
+.pop-up-form {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.form-title-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.form-title-box h1 {
+  font-size: 26px;
+  line-height: 40px;
+  width: 60%;
+  font-family: "ITC Avant Garde Std Bk";
+  color: #000;
+}
+.close-icon-form {
+  cursor: pointer;
+}
+.valid-context {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 34px;
+}
+.valid-input-box {
+  position: relative;
+}
+.valid-input-box label {
+  position: relative;
+  left: 20px;
+  top: 10px;
+  width: fit-content;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  font-family: "ITC Avant Garde Std Bk";
+  pointer-events: none;
+  z-index: 5;
+  text-transform: capitalize;
+}
+.valid-input-box label::after {
+  position: absolute;
+  content: "*";
+  right: -10px;
+  top: -3px;
+  color: red;
+  z-index: 5;
+}
+
+.val-input {
+  border: none;
+  width: 100%;
+  position: absolute;
+  border-radius: 12px;
+  appearance: none;
+  outline: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  font-family: "ITC Avant Garde Std Bk";
+  padding-left: 20px;
+  left: 0;
+  height: 100%;
+  background-color: #f3f5f6;
+}
+.valid-name,
+.valid-email {
+  width: calc((100% / 2) - 17px);
+  height: 50px;
+}
+.valid-contact-info {
+  width: 100%;
+  height: 50px;
+}
+.valid-textarea {
+  width: 100%;
+  height: 115px;
+}
+.valid-file {
+  height: 109px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.valid-file .val-input {
+  transform: scale(3.5);
+  z-index: 8;
+}
+.pop-btn {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.pop-btn button {
+  width: fit-content;
+  padding: 14px 32px;
+  background: #074045;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "ITC Avant Garde Std Bk";
+  text-transform: capitalize;
+  position: relative;
+}
+.pop-btn button::before {
+  position: absolute;
+  content: "";
+  width: 2000px;
+  top: 50%;
+  left: -2027px;
+  height: 2px;
+  background: #f3f5f6;
+  pointer-events: none;
+}
+.file-name {
+  position: absolute;
+  top: 25px;
+  z-index: 9;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  pointer-events: none;
+}
+.file-name .p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "ITC Avant Garde Std Bk";
+  display: flex;
+}
+.remove-value {
+  margin-top: -17px;
+  height: fit-content;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  padding: 5px;
+  pointer-events: all;
+}
+/* Pop Up */
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin: 40px 0;
+  align-items: center;
+}
+.breadcrumbs .br-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.breadcrumbs .br-item:first-child span {
+  display: none;
+}
+.breadcrumbs .br-item a {
+  text-transform: capitalize;
+  color: #000000;
+  font-family: "ITC Avant Garde Gothic Std Book";
+  font-size: 16px;
+  line-height: 24px;
+  transition: 0.2s;
+}
+.breadcrumbs .br-item:hover a,
+.breadcrumbs .br-item:hover span {
+  /* -webkit-text-stroke: 1px black; */
+  text-shadow: 0 0 0.8px #000;
+}
+.breadcrumbs .br-item:last-child a,
+.breadcrumbs .br-item:last-child span {
+  pointer-events: none;
+  text-shadow: 0 0 0.8px #000;
+}
+/* HomePage */
+
+/* Submenu Page */
+.section-title {
+  padding: 0 30px;
+  padding-top: 18px;
+  border-left: 7px solid;
+  border-right: 7px solid;
+  border-top: 7px solid;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: fit-content;
+  position: relative;
+}
+.section-title::after {
+  position: absolute;
+  content: "";
+  right: -9px;
+  top: 60%;
+  height: 50%;
+  width: 12px;
+  background: #fff;
+}
+.section-title::before {
+  position: absolute;
+  content: "";
+  left: -9px;
+  top: 60%;
+  height: 50%;
+  width: 12px;
+  background: #fff;
+}
+.section-title h1 {
+  font-family: "ITC Avant Garde Std Bk";
+  font-size: 50px;
+  line-height: 50px;
+  text-transform: capitalize;
+}
+.section-title-box {
+  margin-bottom: 50px;
+}
+.submenu-content .text {
+  font-size: 18px;
+  font-family: "ITC Avant Garde Gothic Std Book";
+  color: #000;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+.submenu-items-box {
+  margin-top: 50px;
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.submenu-item {
+  width: calc((100% / 3) - 24px);
+  height: 151px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #f3f5f6;
+  transition: 0.2s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.submenu-item p {
+  color: #074045;
+  max-height: 85px;
+  overflow: hidden;
+  line-height: 28px;
+  font-size: 22px;
+  font-family: "ITC Avant Garde Std Bk";
+}
+.submenu-item:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 18px;
+}
+/* Submenu Page */
+/* Request information page */
+.text-page-element-1 {
+  width: 100%;
+  display: flex;
+}
+.left-text .text {
+  font-family: "ITC Avant Garde Gothic Std Book";
+  font-size: 18px;
+  line-height: 27px;
+  color: #074045;
+  overflow-wrap: break-word;
+}
+.share-box {
+  margin-top: 50px;
+  width: fit-content;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.share-box h3 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+}
+#st-1 {
+  z-index: 5 !important;
+}
+#st-1 .st-btn[data-network="linkedin"] {
+  display: inline-block !important;
+}
+.relative-text-box {
+  position: relative;
+  width: 100%;
+  min-height: 538px;
+}
+.left-text {
+  padding-right: 81px;
+}
+.absolute-text-img {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 538px;
+  padding-left: 6.5%;
+}
+.absolute-text-img .fancy-class-handle {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.absolute-text-img .fancy-class-handle a img,
+.absolute-text-img img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px; 
+}
+.mg-top_1 {
+  margin-top: 50px;
+}
+.req-form {
+  overflow-x: hidden;
+}
+.req-valid-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+.req-val-box-1 {
+  width: calc((50% - 17px));
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+.req-val-box-1 .valid-input-box {
+  width: calc((100% / 2) - 18px);
+  height: 50px;
+  background: #f3f5f6;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.req-val-box-2 {
+  width: calc(50% - 18px);
+}
+.req-val-box-2 .req-valid-desc {
+  width: 100%;
+  background-color: #f3f5f6;
+  height: 135px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.req-val-box-1 .valid-input-box input,
+.req-val-box-2 .valid-input-box input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  border: 0;
+  outline: none;
+  border-radius: 12px;
+  background-color: #f3f5f6;
+  padding-left: 25px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  font-family: "ITC Avant Garde Std Bk";
+}
+.req-val-box-1 .valid-input-box:focus-within label {
+  display: none;
+}
+.req-valid-desc:focus-within label {
+  display: none;
+}
+.req-valid-contact-information label::after,
+.req-valid-organisation-name label::after {
+  display: none;
+}
+/* Request information page */
+
+/* Attached Files */
+.attached-items {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px 35px;
+  margin-top: 29px;
+}
+.attached-items a {
+  width: calc((100% / 4) - 27px);
+  height: 192px;
+  border-radius: 17px;
+  background: #f3f5f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 30px 38px;
+  transition: 0.3s;
+}
+.attached-items a:hover {
+  background: #144147;
+}
+.attached-items a .attached-file-icon {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: -44px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.attached-items a .text {
+  max-height: 87px;
+  overflow: hidden;
+  width: 100%;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "ITC Avant Garde Std Bk";
+  color: #144147;
+  text-align: center;
+  margin-top: 35px;
+  transition: 0.3s;
+}
+.attached-items a:hover .text {
+  color: #fff;
+}
+.load-more-box {
+  margin-top: 60px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.load-more-btn {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  cursor: pointer;
+}
+.load-more-btn::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -1036px;
+  width: 1000px;
+  height: 2px;
+  background-color: #dae2e3;
+  pointer-events: none;
+}
+.load-more-btn::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: -1036px;
+  width: 1000px;
+  height: 2px;
+  background-color: #dae2e3;
+  pointer-events: none;
+}
+/* Attached Files */
+
+/* TextPageBanner */
+.text-banner {
+  height: 529px;
+}
+.text-banner-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.text-banner-context {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 918px;
+}
+.text-banner-context h1 {
+  width: fit-content;
+  font-size: 36px;
+  line-height: 54px;
+  color: #000;
+  font-family: "ITC Avant Garde Std Bk";
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.text-banner-context .text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  font-size: 20px;
+  color: #000;
+  line-height: 30px;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.text-banner-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-banner-btn {
+  padding: 33px 77px;
+  width: fit-content;
+  background: #144147;
+  border-radius: 17px;
+  outline: none;
+  font-size: 28px;
+  color: #fff;
+  font-family: "ITC Avant Garde Std Bk";
+}
+/* TextPageBanner */
+/* TextPageSLider */
+.text-slider-relative {
+  position: relative;
+}
+.swp-item {
+  width: 630px;
+  height: 389px !important;
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.swp-item a {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 20px;
+      overflow: hidden; */
+}
+.swp-item a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.swp-item:hover a img {
+  transform: scale(1.08);
+}
+.text-slider-item-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  z-index: 2;
+}
+.text-slider-y-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  pointer-events: none;
+  z-index: 3;
+}
+.swp-item:hover .text-slider-y-icon svg path {
+  fill: red;
+}
+.text-swp-slider .swiper-slide {
+  width: 630px;
+  transition: 0.3s;
+}
+.text-swp-slider .swiper-slide-active {
+  width: 677px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: 0.3s;
+}
+.text-swp-slider .swiper-slide-active a {
+  width: 100%;
+  display: block;
+}
+/* TextPageSLider */
+
+/* News Loader */
+.news-loader {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 40px 30px;
+}
+.news-loader-item {
+  width: calc((100% / 3) - 20px);
+}
+/* News Loader */
+/* Programs */
+.programs-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+  margin-top: 40px;
+}
+.programs-item {
+  width: calc((100% / 3) - 23px);
+  height: 160px;
+  border-radius: 15px;
+  padding: 27px 45px;
+  display: flex;
+  align-items: center;
+  background: #f3f5f6;
+  position: relative;
+  overflow: hidden;
+  padding-left: 120px;
+  transition-duration: 0.3s;
+}
+.programs-item .icon {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+.programs-item .icon span svg {
+  width: 72px;
+  height: 58px;
+}
+.programs-item .content {
+  display: flex;
+  flex-direction: column;
+}
+.programs-item .content h1 {
+  font-size: 24px;
+  line-height: 28px;
+  font-family: "ITC Avant Garde Std Bk";
+  transition: 0.3s;
+  max-height: 85px;
+  overflow: hidden;
+}
+.programs-item .content p {
+  margin-top: 10px;
+  color: #074045;
+  transition: 0.3s;
+  font-size: 18px;
+  font-family: "ITC Avant Garde Std Bk";
+  max-height: 23px;
+  overflow: hidden;
+}
+.programs-item:hover .icon span svg path {
+  transition: 0.3s;
+}
+.programs-item:hover {
+  background: #c09a21;
+}
+.programs-item:hover .icon span svg path {
+  fill: #fff;
+}
+.programs-item:hover .content p,
+.programs-item:hover .content h1 {
+  color: #fff !important;
+}
+/* Programs */
+
+/* Personnel */
+.personnel-box {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+.personnel-item {
+  width: calc((100% / 4) - 27px);
+  height: 518px;
+  position: relative;
+}
+.pesronnel-img {
+  width: 100%;
+  height: 374px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.pesronnel-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.pesronnel-img h3 {
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #8acfd4;
+  font-weight: bold;
+  background: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-family: "ITC Avant Garde Gothic Std";
+  white-space: nowrap;
+  height: 53px;
+  width: 235px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  display: none;
+  word-break: break-all;
+  white-space: pre-wrap;
+  line-height: 24px;
+  overflow: hidden;
+}
+.pesronnel-img h3.hide-person {
+  display: flex;
+}
+.personnel-item .info {
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 5;
+}
+.personnel-item .info h1 {
+  margin-top: 25px;
+  font-size: 22px;
+  color: #1b1b1b;
+  font-family: "ITC Avant Garde Std Bk";
+}
+.personnel-item .info .text {
+  margin-top: 12px;
+  color: #000000;
+  font-size: 18px;
+  height: 75px;
+  overflow: hidden;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+  line-height: 26px;
+  transition: 0.3s;
+}
+.personnel-item .info .person-email {
+  color: #0a66c2;
+  font-weight: 500;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 24px;
+  display: none;
+  transition: 0.3s;
+}
+.personnel-item .info .linkdin-cont {
+  display: none;
+  transition: 0.3s;
+}
+
+.personnel-item:hover .info .linkdin-cont {
+  display: flex;
+  animation: animeHoverText 0.3s ease;
+}
+.personnel-item:hover .info .person-email {
+  display: flex;
+  animation: animeHoverText 0.3s ease;
+}
+.personnel-item:hover .info h1 {
+  margin-top: 15px;
+  animation: animeHoverText 0.3s ease;
+}
+.personnel-item:hover .info .text {
+  height: 79px;
+  animation: animeHoverText 0.3s ease;
+}
+.personnel-item:hover .info {
+  transition: 0.3s;
+  width: 100%;
+  padding: 29px 40px 42px 40px;
+  background: #fff;
+  /* height: 291px; */
+  bottom: 0;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@keyframes animeHoverText {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Personnel */
+
+/* Programs-tabs */
+.programs-tabs {
+  overflow-x: hidden;
+}
+.tabs-box-2 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.left-tab-items {
+  width: 20%;
+  padding-right: 80px;
+}
+.right-tab-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.left-tab-items ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.programs-tab-link {
+  list-style: none;
+  display: flex;
+  gap: 13px;
+  color: #1b1b1b;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-size: 18px;
+  line-height: 26px;
+  cursor: pointer;
+  position: relative;
+  padding-right: 50px;
+  border-top-right-radius: 19px;
+  border-bottom-right-radius: 19px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.active-programs-tab-link {
+  background: #074045;
+  color: #fff;
+  padding: 21px 0;
+}
+.active-programs-tab-link::before {
+  position: absolute;
+  content: "";
+  width: 1000px;
+  height: 100%;
+  left: -980px;
+  background: #074045;
+  z-index: -1;
+}
+.programs-tab-link span {
+  display: none;
+}
+.active-programs-tab-link span {
+  display: flex;
+}
+.school-type-box {
+  display: flex;
+}
+.school-type-box span {
+  margin-right: 19px;
+}
+.type-box {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.type-box span {
+  width: 2px;
+  height: 22px;
+  background: #1b1b1b;
+  margin-right: 0;
+}
+.type-box h2 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+  font-family: "ITC Avant Garde Std Bk";
+}
+.tab-content-box .text {
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  font-family: "ITC Avant Garde Gothic Std Book";
+  font-weight: 400;
+  margin-top: 26px;
+  word-wrap: break-word;
+}
+.topics-side {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.topics-side h1 {
+  color: #f26659;
+  font-size: 32px;
+  font-family: "ITC Avant Garde Std Bk";
+}
+.topics-line {
+  margin: 0 30px;
+  height: 1px;
+  width: 75px;
+  background-color: #dae2e3;
+}
+.topics-items {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.t-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.t-item h3 {
+  font-size: 18px;
+  color: #000000;
+  font-family: "ITC Avant Garde Gothic Std Book";
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.t-item:last-child span {
+  display: none;
+}
+.t-item {
+  margin-right: 15px;
+}
+.t-item:first-child {
+  margin-left: 0;
+}
+.mobile-tab-list {
+  display: none;
+}
+/* Programs-tabs */
+/* Faq */
+.faq-section {
+  background: #074045;
+  padding: 80px 0;
+}
+.faq-questions-box h1 {
+  font-size: 50px;
+  margin-bottom: 45px;
+  font-family: "ITC Avant Garde Std Bk";
+  color: #fff;
+  line-height: 50px;
+}
+.faq-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.question-item {
+  display: flex;
+  flex-direction: column;
+}
+.question-item h2 {
+  font-size: 26px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 36px;
+  font-family: "ITC Avant Garde Std Bk";
+  cursor: pointer;
+}
+.question-item .text {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 30px;
+  font-family: "ITC Avant Garde Std Bk";
+  max-height: 0px;
+  overflow: hidden;
+}
+.question-item .active-question {
+  margin-top: 20px; 
+  overflow: initial;
+  color: rgba(255, 255, 255, 1);
+  max-height: 4000px;
+}
+.question-item .active-title {
+  color: rgba(255, 255, 255, 1);
+}
+/* Faq */
+
+/* gallery */
+.gallery-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 34px;
+}
+.gallery-item {
+  width: calc((100% / 3) - 23px);
+}
+.gall-img-box {
+  position: relative;
+  height: 307px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.gall-img-box img {
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+  position: absolute;
+  z-index: 2;
+  object-fit: cover;
+}
+.gall-img-box iframe{
+  width: 100%;
+  height: 100%;
+}
+.gallery-item-box .gallery-date {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  padding: 20px 75px;
+  padding-bottom: 18px;
+  background: #fff;
+  font-size: 20px;
+  color: #000;
+  font-family: "ITC Avant Garde Std Bk";
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-width: 280px;
+  white-space: nowrap;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gall-img-box span {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gallery-item .text {
+  height: 98px;
+  overflow: hidden;
+  font-size: 22px;
+  color: #1b1b1b;
+  font-family: "ITC Avant Garde Std Bk";
+  line-height: 34px;
+  margin-top: 28px;
+}
+.gallery-item:hover .gallery-item-box img {
+  transform: scale(1.05);
+}
+.gall-img-box span svg path {
+  transition: 0.2s;
+}
+.gallery-item:hover .gall-img-box span svg path {
+  fill: red;
+}
+.text1 {
+  font-size: 18px;
+  color: #000000;
+  font-family: "ITC Avant Garde Gothic Std Book";
+  line-height: 27px;
+  margin-bottom: 50px;
+}
+/* gallery */
+
+/* pagination */
+.pagination {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination-2 {
+  margin-top: 70px;
+}
+.pagination div button {
+  border: none;
+  outline: none;
+  background: none;
+}
+.pagination div {
+  display: flex;
+  align-items: flex-start;
+  gap: 65px;
+}
+.pagination-btn {
+  font-size: 18px;
+  color: #000;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+}
+.p-p-disable {
+  pointer-events: none;
+  color: #bbbbbb;
+}
+.pagination-number {
+  font-size: 28px;
+  color: #000;
+  font-family: "ITC Avant Garde Gothic Std";
+  position: relative;
+  padding-bottom: 20px;
+}
+.pagination-number-disable {
+  color: #eb5e51;
+}
+.pagination-number-disable::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 45px;
+  height: 4px;
+  background: #eb5e51;
+  left: -6px;
+}
+/* pagination */
+
+/* Events Page */
+.ev-content-2 {
+  margin-top: 0 !important;
+  gap: 70px 30px;
+}
+/* Events Page */
+/* EventDetail */
+.section-title-box-non-border .section-title {
+  padding: 0;
+  border: none;
+}
+.section-title-box-non-border .section-title::before {
+  display: none;
+}
+.section-title-box-non-border .section-title::after {
+  display: none;
+}
+.event-detail-time {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #f26659;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+}
+.registration-events {
+  padding-right: 81px;
+}
+.registration-box {
+  position: relative;
+  width: 100%;
+  border-radius: 18px;
+  background: #f3f5f6;
+  padding: 30px 17% 25px 35px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reg-date h2 {
+  font-size: 20px;
+  color: #074045;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.r-date-time {
+  display: flex;
+  align-items: center;
+}
+.r-date-time p {
+  font-size: 18px;
+  color: #074045;
+  line-height: 1.5;
+  font-family: "ITC Avant Garde Std Bk";
+}
+.r-date-time span {
+  width: 62px;
+  height: 2px;
+  background-color: #074045;
+  margin: 0 20px;
+}
+.reg-date {
+  max-width: 370px;
+}
+.apply-button {
+  appearance: none;
+  border: none;
+  background: #f26659;
+  border-radius: 15px;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 55px;
+  font-size: 18px;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.absolute-alte-icon {
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+}
+.absolute-alte-icon span svg {
+  height: 57px;
+  width: 70px;
+}
+/* EventDetail */
+
+/* News Page */
+.news-box_01 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px 30px;
+}
+/* News Page */
+
+/* Course Detail */
+.course-detail-time {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.reg-det2 {
+  max-width: 350px;
+}
+.reg-det2 h2 {
+  font-size: 22px;
+}
+.add-proffesion {
+  padding-left: 25px;
+  margin-left: 25px;
+  border-left: 3px solid #000;
+}
+.add-proffesion span {
+  color: #074045;
+  font-size: 20px;
+  font-family: "ITC Avant Garde Std Bk";
+  line-height: 1.3;
+}
+/* Course Detail */
+
+/* header-subscribe-form */
+.header-subscribe-form {
+  background-color: #144147;
+  border-radius: 34px;
+  padding: 100px 66px 80px 66px;
+}
+
+.header-subscribe-form .container {
+  max-width: 1560px;
+}
+.header-subscribe-form .subscribe-send-box {
+  padding-left: 115px;
+}
+.header-subscribe-form .subscribe-box::before {
+  display: none;
+}
+.relative-subscribe-box1 {
+  position: relative;
+}
+.close-button-absolute {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+.relative-subscribe-box1 .close-button-absolute {
+  display: flex;
+}
+.close-button-absolute span svg {
+  width: 25px;
+  height: 25px;
+}
+.close-button-absolute span svg path {
+  fill: #fff;
+}
+/* header-subscribe-form */
+
+/* Partners */
+.partners-box-1 .news-img {
+  height: 331px;
+}
+.partners-box-1 .news-time {
+  display: none;
+}
+.partners-box-1 .news-text {
+  height: 86px;
+}
+/* Partners */
+
+/* Faq Page */
+.faq-search {
+  width: 100%;
+}
+.faq-search-value {
+  width: 100%;
+  position: relative;
+}
+.faq-search-value input {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 60px;
+  border-bottom: 3px solid #000000;
+  font-size: 18px;
+  color: #000;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+}
+.faq-search-value input::placeholder {
+  font-size: 18px;
+  color: #000;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+}
+.faq-search-icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  gap: 11px;
+  cursor: pointer;
+}
+.faq-search-icon h4 {
+  color: #074045;
+  font-family: "ITC Avant Garde Std Bk";
+  font-size: 16px;
+}
+.faq-search-icon span svg path {
+  fill: #074045;
+}
+.faq-filter-select-box {
+  margin-top: 40px;
+}
+.faq-filter-select {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.category-filter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.category-filter h3 {
+  font-family: "ITC Avant Garde Std Bk";
+  font-size: 18px;
+  color: #000;
+}
+.filter-arrow {
+  transform: rotate(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+.filter-arrow-rotate {
+  transform: rotate(0);
+}
+.filter-arrow span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.all-result {
+  font-family: "ITC Avant Garde Std Bk";
+  font-size: 18px;
+  color: #000;
+}
+.faq-select-item-box {
+  transition: 0.1s;
+  max-height: 0;
+  overflow: hidden;
+}
+.faq-select-item-box-open {
+  margin-top: 30px;
+  border-bottom: 3px solid #f3f5f6;
+  padding-bottom: 40px;
+  max-height: 500px;
+}
+.faq-select-item-box ul {
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.faq-select-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.faq-select-item h5 {
+  font-size: 16px;
+  color: #000;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+}
+.faq-item-checkbox {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faq-item-checkbox span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.faq-result-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.f-result-item {
+  display: flex;
+  flex-direction: column;
+}
+.f-result-item span {
+  transition: 0.2s;
+}
+.faq-item-1-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.faq-item-1-title h1 {
+  font-size: 26px;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  line-height: 1.5;
+  max-width: 90%;
+  transition: 0.2s;
+}
+.f-result-open .faq-item-1-title h1 {
+  color: rgba(0, 0, 0, 1);
+}
+.faq-description {
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+}
+.f-result-open .faq-description {
+  margin-top: 15px;
+  max-height: 1000px;
+}
+.f-result-open span {
+  transform: rotate(-180deg);
+}
+.faq-description h2 {
+  font-size: 20px;
+  color: #f26659;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.f-desc {
+  margin-top: 20px;
+  color: #000;
+  font-size: 18px;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+}
+.faq-select-item-active .faq-item-checkbox span {
+  display: flex;
+}
+.faq-select-item-active h5 {
+  color: #144147;
+}
+/* Faq Page */
+/* Contact Page */
+.contact-title-side {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+.contact-icons-item {
+  width: calc((100% / 3) - 24px);
+  height: 145px;
+  border-radius: 18px;
+  background: #074045;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+.c-desc {
+  margin-left: 20px;
+}
+.c-desc h2 {
+  color: #fff;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.c-desc span {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+  font-size: 20px;
+  color: #4f8388;
+}
+.contact-icons-item:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.contact-icons-item:nth-child(2) {
+  background: #98d1d8;
+}
+.contact-icons-item:nth-child(3) {
+  background: #f26659;
+}
+
+.contact-icons-item:nth-child(2) .c-desc span {
+  color: #ddf2f4;
+}
+.contact-icons-item:nth-child(3) .c-desc span {
+  color: #febdb7;
+}
+
+.contact-forms {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 35px;
+}
+.left-form {
+  width: calc((100% / 3) - 24px);
+}
+.left-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.left-form h3 {
+  color: #074045;
+  line-height: 1.5;
+  font-size: 26px;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.right-map {
+  width: calc(((100% / 3) * 2) - 50px);
+  height: 540px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.valid-contact-form-item {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+  background: #f3f5f6;
+}
+.valid-contact-form-item label,
+.valid-contact-form-item input::placeholder,
+.valid-contact-form-item textarea::placeholder {
+  position: relative;
+  width: fit-content;
+  color: #000000;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+  font-size: 16px;
+  z-index: 5;
+  margin-left: 17px;
+  margin-top: 14px;
+  pointer-events: none;
+}
+.valid-contact-form-item label::after {
+  position: absolute;
+  content: "*";
+  color: #f26659;
+  padding-left: 2px;
+}
+.valid-contact-form-item input {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 15px;
+  background: #f3f5f6;
+  appearance: none;
+  padding-left: 17px;
+  color: #000000;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+  font-size: 16px;
+  outline: none;
+}
+.valid-contact-form-item:nth-child(3) textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 15px;
+  background: #f3f5f6;
+  appearance: none;
+  padding-left: 17px;
+  padding-top: 15px;
+  color: #000000;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+  font-size: 16px;
+  outline: none;
+  position: absolute;
+  left: 0;
+  resize: none;
+}
+.valid-contact-form-item:nth-child(3) {
+  height: 268px;
+}
+.left-form form button {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 12px;
+  background: #f26659;
+  color: #fff;
+  font-size: 18px;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  outline: none;
+  transition: 0.2s;
+}
+.left-form form button:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* Contact Page */
+
+/* Search Page */
+.search-results {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.s-resultItem {
+  width: 100%;
+  padding-bottom: 50px;
+  border-bottom: 3px solid #f3f5f6;
+  display: flex;
+  flex-direction: column;
+}
+.s-resultItem a {
+  font-size: 42px;
+  color: #144147;
+  line-height: 1.4;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.s-resultItem span {
+  color: #000000;
+  font-size: 20px;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.s-resultItem .search-desc {
+  margin-top: 15px;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+}
+.search-desc p, .search-desc span, .search-desc li, .search-desc strong, .search-desc a  {
+  margin-top: 15px;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+}
+/* Search Page */
+
+/* publication Page */
+.publication-search-results {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px 50px;
+}
+.publication-item {
+  width: calc((100% / 3) - 34px);
+}
+.publication-item a {
+  height: 346px;
+  display: flex;
+  transition: 0.3s;
+  gap: 25px;
+  justify-content: space-between;
+}
+.publication-image {
+  width: 230px;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.publication-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: 0.2s;
+  object-fit: cover;
+}
+.publication-item:hover .publication-image img {
+  transform: scale(1.05);
+}
+.publication-text {
+  width: calc(100% - 255px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.publication-text h2,
+.publication-text span {
+  font-size: 18px;
+  color: #000;
+  line-height: 1.6;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+}
+.publication-text span {
+  font-size: 20px;
+}
+.publication-type {
+  font-size: 20px;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.publication-type h3 {
+  color: #000;
+}
+.publication-topics {
+  font-size: 20px;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  color: #000;
+  align-items: center;
+  line-height: 1.6;
+  text-transform: capitalize;
+}
+.publication-topics span {
+  color: #eb5e51;
+  margin-right: 3px;
+}
+.filter-selects-box-01 {
+  width: 100%;
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+.select-01 {
+  width: calc((100% / 4) - 27px);
+  transition: 0.3s;
+  border: 2px solid transparent;
+  transition: 0.2s;
+  position: relative;
+}
+.select-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 20px;
+  border-radius: 12px;
+  background: #f3f5f6;
+  cursor: pointer;
+}
+.select-title h2 {
+  color: #000;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-weight: 500;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.select-title span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.select-title span svg {
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.select-title-show span svg {
+  transform: rotate(180deg);
+}
+.select-01-show {
+  background-color: #fff;
+}
+.select-title-show {
+  background-color: #fff;
+  border-top: 2px solid #edf2f3;
+  border-left: 2px solid #edf2f3;
+  border-right: 2px solid #edf2f3;
+  border-bottom: 0;
+  border-radius: 12px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.select-title-show h2 {
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.select-01 ul {
+  margin: 0;
+  padding: 0;
+
+  padding: 0 20px;
+  max-height: 0;
+  display: none;
+  position: absolute;
+  left: 0;
+  border: 2px solid transparent;
+  z-index: 9;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  width: 100%;
+}
+.select-01-show ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /* overflow: scroll; */
+  min-height: 300px;
+  gap: 0;
+  border: 2px solid #edf2f3;
+  border-top: 0;
+}
+.publication-filter-i {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 2px solid #dfe8ec;
+}
+.publication-filter-i:last-child {
+  border: none;
+}
+.publication-filter-i h5 {
+  width: 100%;
+}
+.publication-select-item-box-open {
+  padding: 0;
+  border-bottom: 0;
+  overflow: initial;
+}
+.submit-buttons {
+  width: calc((100% / 4) - 27px);
+  transition: 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+}
+.submit-buttons button {
+  border: none;
+  appearance: none;
+  font-size: 18px;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 56px;
+}
+.submit-search-btn {
+  border-radius: 15px;
+  background: #074045;
+  padding: 0 40px;
+  color: #fff;
+  transition: 0.2s;
+}
+.submit-search-btn:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.submit-search-btn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submit-search-btn span svg path {
+  fill: #fff;
+}
+.submit-clear-btn {
+  border-radius: 15px;
+  background: rgba(235, 94, 81, 0.07);
+  padding: 0 16px;
+  color: #eb5e51;
+  transition: 0.2s;
+}
+.submit-clear-btn:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.submit-clear-btn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* publication Page */
+
+/* Publication Detail */
+.publication-detail-title h1 {
+  line-height: 1.3;
+}
+.related-publication-list {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.publication-detail {
+  display: flex;
+  gap: 45px;
+}
+.publication-left-img {
+  width: 364px;
+  height: 545px;
+  border-radius: 15px;
+}
+.publication-left-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+.publication-right-description {
+  width: calc(100% - 410px);
+  display: flex;
+  flex-direction: column;
+}
+.p-r-year {
+  color: #f26659;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  line-height: 1.5;
+}
+.p-r-author,
+.publication-type2 {
+  color: #000000;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.p-r-author span,
+.publication-type span {
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  color: #074045;
+}
+.p-r-preview {
+  margin-top: 20px;
+}
+.preview {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  background: transparent;
+  border: 2px solid #074045;
+  color: #074045;
+  height: 50px;
+  padding: 0 26px;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  transition: 0.2s;
+  width: fit-content;
+}
+.preview span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preview span svg path {
+  transition: 0.2s;
+}
+.preview:hover {
+  background-color: #074045;
+  color: #fff;
+}
+.preview:hover span svg path {
+  fill: #fff;
+}
+.p-r-text {
+  margin-top: 30px;
+  line-height: 1.6;
+  color: #000;
+  font-family: "ITC Avant Garde Gothic Std Book";
+  font-weight: 400;
+  font-size: 18px;
+}
+/* Publication Detail */
+
+/* Person Detail */
+.person-description {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+.left-person-img {
+  display: flex;
+  flex-direction: column;
+  width: 365px;
+}
+.left-person-img img {
+  width: 100%;
+  height: 374px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.person-email {
+  margin-top: 40px;
+}
+.person-email a,
+.person-linkedin a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  word-break: break-all;
+  color: #074045;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  transition: 0.2s;
+}
+.person-linkedin a {
+  color: #0a66c2;
+}
+.person-linkedin {
+  margin-top: 30px;
+}
+.person-email:hover a,
+.person-linkedin:hover a {
+  text-decoration: underline;
+}
+.right-desc-text-person {
+  width: calc((100% - 400px));
+}
+.right-desc-text-person h1 {
+  width: fit-content;
+  font-size: 22px;
+  color: #eb5e51;
+  line-height: 1.5;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #8acfd4;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+}
+.right-desc-text-person .text {
+  line-height: 1.5;
+  margin-top: 40px;
+  font-size: 18px;
+  column-rule-color: #000;
+  font-family: "ITC Avant Garde Gothic Std";
+}
+/* Person Detail */
+#spinner {
+  opacity: 1;
+  animation: animationOpacity 0.15s ease;
+}
+#spinner span {
+  color: #eb5e51;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  font-size: 26px;
+  margin-right: 15px;
+  opacity: 1;
+}
+
+@keyframes animationOpacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.text li{
+  list-style: none;
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 25px;
+}
+.text li::before{
+  position: absolute; 
+  background-image: url("../public/img/listarrow.svg");
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 25px;
+  content: ""; 
+  left: 0;
+}
+.mg-bottom-50{
+  margin-bottom: 50px;
+}
+.pd-bottom-50{
+  padding-bottom: 50px;
+}
+
+.pd-bottom-70{
+  padding-bottom: 70px;
+}
+.handle-width-1 {
+  width: 100%;
+}
+.hide-see-link-01 a{
+  display: none;
+}
+.right-hidden-img-1{
+  width: 47%;
+  height: 560px;
+  float: right;
+}
+.right-hidden-img-2{
+  width: 47%;
+  height: 540px;
+  float: right;
+}
+.loader-data {
+  position: static;
+  min-height: 200px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fancybox__container{
+  z-index: 1000000!important;
+}
+.alert-container{
+  width: 100%;
+  height: 100vh; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
+}
+.form-alert{
+  max-width: 630px;
+  width: 95%;
+  min-height: 250px;
+  max-height: 390px;
+  background: #fff;
+  border-radius: 25px;
+  border: 3px solid #E7E7E7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999999999999999999;
+  transform: translate(-50%, -50%);
+}
+.alert-content{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  padding: 60px;
+  border-radius: 26px;
+}
+.alert-text{
+  max-height: 120px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'ITC Avant Garde Gothic Std';
+  overflow: hidden;
+  text-align: center;
+}
+
+.close-icon-alert{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+/* cookie */
+  
+.cookie-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cookie-text{
+  width:70%;
+}
+.cookie-text h1{
+  color: #fff;
+  font-family: "ITC Avant Garde Std Bk";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.cookie-handle{
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+}
+.cookie-text{
+  padding: 35px 0;
+}
+.cookie-text .text{
+  font-family: 'ITC Avant Garde Gothic Std';
+  font-weight: 500;
+  color: #fff;
+  font-size: 18px;
+}
+
+.cookie-buttons{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.CookieConsent{
+  padding: 14px 9%!important;
+  align-items: center!important; 
+}
+.decline-button{
+  font-size: 18px;
+  color: #fff;
+  background: transparent!important;
+  border: none;
+  font-family: 'ITC Avant Garde Gothic Std Book';  
+  margin: 0!important;
+}
+.accapt-button{
+  padding: 12px 30px!important;
+  background: #fff!important;
+  color: #0E3D4B;
+  font-family: 'ITC Avant Garde Gothic Std';
+  font-weight: 600;
+  border-radius: 15px!important;
+  font-size: 18px!important;
+  color: #0E3D4B!important;
+  margin: 0!important;
+}
+.wrapper-button{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px; 
+}
+/* cookie */
+
+.readirect-banner {
+  overflow-x: hidden;
+}
+html:lang(ka) .submit-search-btn{
+  padding: 0 25px;
+}
+
+html:lang(ka) .submit-clear-btn{
+  padding: 0 15px;
+}
+html:lang(ka) .submit-buttons{
+  gap: 25px;
+}
+
+html:lang(ka) .nav-link, html:lang(ka) .bottom-header-alte-btn{
+  font-size: 16px;
+}
+html:lang(ka) .section-title h1{
+  font-size: 34px;
+} 
+html:lang(ka) .category-filter h3,
+html:lang(ka) .topics-side h1,
+html:lang(ka) .event-detail-time {
+  font-family: "TBC Contractica";
+  font-weight: bold;
+}
+html:lang(ka) .section-title h1,
+html:lang(ka) .events-top h1,
+html:lang(ka) .personnel-item .info h1,
+html:lang(ka) .type-box h2,
+html:lang(ka) .left-form form button, html:lang(ka) .c-desc h2 {
+  font-family: "TBC Contractica CAPS";
+  font-weight: bold;
+}
+html:lang(ka) .tabs-left-link span,
+html:lang(ka) .tabs-left-link a {
+  font-size: 38px;
+  font-family: "TBC Contractica CAPS";
+  font-weight: bold;
+}
+html:lang(ka)  .cookie-text h1{ 
+  font-family: "TBC Contractica"!important;
+  font-weight: bold !important;
+}
+html:lang(ka)  .cookie-text .text{
+  font-family: "TBC Contractica" !important;
+  font-weight: 500 !important;
+}
+html:lang(ka)  .decline-button{
+  font-family: "TBC Contractica" !important;
+  font-weight: 500 !important;
+}
+html:lang(ka)  .accapt-button{
+  font-family: "TBC Contractica"!important;
+  font-weight: bold !important;
+}
+
+html:lang(ka) .text,
+html:lang(ka) .alert-text,
+html:lang(ka) .text1,
+html:lang(ka) .news-text,
+html:lang(ka) .event-text,
+html:lang(ka) .gallery-item-box .gallery-date,
+html:lang(ka) .pesronnel-img h3,
+html:lang(ka) .publication-text h2, 
+html:lang(ka) .add-proffesion span,
+html:lang(ka) .r-date-time p,
+html:lang(ka) .publication-type,
+html:lang(ka) .publication-topics,
+html:lang(ka) .valid-contact-form-item label, 
+html:lang(ka) .valid-contact-form-item input::placeholder, 
+html:lang(ka) .valid-contact-form-item textarea::placeholder {
+  font-family: "TBC Contractica" !important;
+  font-weight: 500 !important;
+}
+html:lang(ka) .event-time span,
+html:lang(ka) .t-item h3 {
+  font-family: "TBC Contractica";
+  font-weight: 500;
+}
+html:lang(ka) .subscribe-input form input::placeholder,
+html:lang(ka) .subscribe-input form input {
+  font-family: "TBC Contractica";
+  font-weight: 500;
+}
+html:lang(ka) .sub-a, html:lang(ka) .publication-text span{
+  font-family: "TBC Contractica"!important;
+  font-weight: bold !important;
+}
+
+html:lang(ka) .geo-font-caps-normal {
+  font-family: "TBC Contractica CAPS";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html:lang(ka) .geo-font-bold {
+  font-family: "TBC Contractica";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+html:lang(ka) .geo-font-caps-9 {
+  font-family: "TBC Contractica CAPS";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+html:lang(ka) .geo-font-3 {
+  font-family: "TBC Contractica";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+html:lang(ka) .geo-font-3-caps {
+  font-family: "TBC Contractica CAPS";
+  font-weight: 300 !important;
+  font-style: normal;
+  font-display: swap;
+}
+
+html:lang(ka) .geo-font-medium-caps {
+  font-family: "TBC Contractica CAPS";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+html:lang(ka) .geo-font-book {
+  font-family: "TBC Contractica Book";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html:lang(ka) .geo-font-medium {
+  font-family: "TBC Contractica";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+html:lang(ka) .geo-font-bold-caps {
+  font-family: "TBC Contractica CAPS";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+html:lang(ka) .geo-font-book-caps {
+  font-family: "TBC Contractica CAPS Book";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html:lang(ka) .geo-font-9 {
+  font-family: "TBC Contractica";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+html:lang(ka) .sub-a:hover{
+  font-family: "TBC Contractica"!important;
+  font-weight: 900!important;
+}
+html:lang(ka) ._header .sub-children-box .sub-a:hover{
+  font-family: "TBC Contractica"!important;
+  font-weight: 900!important;
+}
+
+.infinite-scroll-component {
+  background-color: #ffff;
+  scrollbar-color: rgba(0, 0, 0, 0.2) #ffff;
+  scrollbar-face-color:rgba(0, 0, 0, 0.2);
+  }
+  .infinite-scroll-component::-webkit-scrollbar {
+  width: 7px!important;
+  }
+
+
+.error-page h1{
+  color:#074045;
+}
+
+ 
